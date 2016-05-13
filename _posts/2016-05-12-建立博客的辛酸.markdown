@@ -1,0 +1,16 @@
+---
+layout: post
+title: Sample Post
+date: 2016-05-12 22:57:24.000000000 +09:00
+---
+
+#终端-ಥ_ಥ
+从前天网上一直在整个人博客的事情, 本来很简单的事,可能因为 Mac 电脑系统升级,自带的 ruby 和安装的 gem,jekyll 都是新的版本,中间报各种各样难懂的错误,Google 了两天还是没有解决,真心累啊 
+
+## 1.没有权限
+## 2.gem jekyll 版本错误
+## 3.gem 源被墙
+
+##[jekyll 部署链接]
+
+[jekyll 部署链接]: http://pizida.com/technology/2016/03/03/use-jekyll-create-blog-on-github/#jekyll-2

@@ -24,8 +24,8 @@ blog_button:
     description: Visit blog
 
 # Navigation buttons in the front page.
-nav:
-    - {title: 项目, description: My Projects, url: 'http://project.onevcat.com'}
+#nav:
+ #   - {title: 项目, description: My Projects, url: 'http://project.onevcat.com'}
     # - {title: Another Button, description: A button, url: 'http://example.com'}
 
 # Pagination
@@ -43,7 +43,6 @@ social:
     weibo: 鼻涕虫匹诺曹
     github:  jonsir
     twitter: Johnny_The_D
-    gplus: 107108267983477358170
     mail: ljduan2013@gmail.com
 
 # Google Analytics

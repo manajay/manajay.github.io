@@ -1,16 +1,16 @@
 # Basic
 title: Jay’Blog
-subtitle: Valar Morghulis Valar Dohaeris 
-welcome_message: <a href="https://github.com/manajay/” target="_blank"></a>
-description: 静下心来,用心观察 处处都透着生活的美 .
+subtitle: Valar Morghulis Valar Dohaeris
+welcome_message: <a href="https://github.com/manajay" #target="_blank"></a>
+description: 静下心来,用心观察 处处都透着生活的美.
 creator: <a href="http://onev.cat">@onevcat</a>
 
-url: "https://github.com/manajay/“
+url: "https://github.com/manajay/"
 
 permalink: /:year/:month/:title/
 
 # Format
-highlighter: plain  
+highlighter: plain
 markdown: kramdown
 kramdown:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", tables]
@@ -23,10 +23,6 @@ blog_button:
     title: 博客
     description: Visit blog
 
-# Navigation buttons in the front page.
-#nav:
- #   - {title: 项目, description: My Projects, url: 'http://project.onevcat.com'}
-    # - {title: Another Button, description: A button, url: 'http://example.com'}
 
 # Pagination
 gems: [jekyll-paginate]
@@ -35,13 +31,13 @@ paginate_path: "page/:num/"
 
 # Comment
 comment:
-    disqus: vno-jekyll
+    disqus: manajay
     # duoshuo: 
     
 # Social
 social:
     weibo: 鼻涕虫匹诺曹
-    github:  manajay
+    github: manajay
     twitter: Johnny_The_D
     mail: manajay.dlj@gmail.com
 

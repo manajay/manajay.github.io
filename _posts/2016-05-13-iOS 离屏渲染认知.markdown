@@ -4,7 +4,7 @@ title: iOS 离屏渲染 认知
 date: 2016-05-14 23:14:30.000000000 +09:00
 ---
 [离屏渲染obj中国]
-[离屏渲染obj中国]: http:baidu.com
+[离屏渲染obj中国]: http://objccn.io/issue-3-1/
 ##离屏渲染 文章内容主要来自 seedante<简书>
 
 ####1.什么是离屏渲染

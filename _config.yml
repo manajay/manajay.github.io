@@ -1,16 +1,17 @@
 # Basic
-title: Jay’Blog
+title: Mana Jay’Blog
 subtitle: Valar Morghulis Valar Dohaeris
-welcome_message: <a href="https://github.com/manajay" #target="_blank"></a>
-description: 静下心来,用心观察 处处都透着生活的美.
-creator: <a href="http://onev.cat">@onevcat</a>
 
-url: "https://github.com/manajay/"
+#welcome_message: <a href="https://github.com/manajay/" target="_blank">求知,在 Github</a>
+
+description: 静下心来,用心观察 处处都透着生活的美.
+
+url: "http://onevcat.com"
 
 permalink: /:year/:month/:title/
 
 # Format
-highlighter: plain
+highlighter: rouge
 markdown: kramdown
 kramdown:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", tables]
@@ -21,7 +22,7 @@ cover_color: gray
 # The blog button should not be removed.
 blog_button:
     title: 博客
-    description: Visit blog
+    description: 访问博客
 
 
 # Pagination
@@ -36,12 +37,7 @@ comment:
     
 # Social
 social:
-    weibo: 鼻涕虫匹诺曹
     github: manajay
     twitter: Johnny_The_D
     mail: manajay.dlj@gmail.com
 
-# Google Analytics
-ga:
-    # id: your_ga_id
-    # host: your_host

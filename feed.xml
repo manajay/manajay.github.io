@@ -1,30 +1,112 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>Mana Jay’Blog</title>
+    <description>静下心来,用心观察 处处都透着生活的美.</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 15 May 2016 22:52:39 +0800</pubDate>
+    <lastBuildDate>Sun, 15 May 2016 22:52:39 +0800</lastBuildDate>
+    <generator>Jekyll v3.1.3</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>iOS 离屏渲染 认知</title>
+        <description>&lt;p&gt;[离屏渲染obj中国]
+[离屏渲染obj中国]: http://objccn.io/issue-3-1/
+##离屏渲染 文章内容主要来自 seedante&lt;简书&gt;&lt;/简书&gt;&lt;/p&gt;
+
+&lt;p&gt;####1.什么是离屏渲染
+obj 中国有一篇文章专门提到了离屏渲染的问题,文章中提到⎡直接将图层合成到当前显示屏幕的帧缓冲区中,比先在屏幕外面创建新的缓冲区,然后渲染到纹理中,最后将结果渲染到当前显示屏幕的帧缓冲区中,性能要好的多⎦&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;主要原因是环境切换 * 转换环境到屏幕外缓冲区* 转换屏幕到帧缓冲区*&lt;/li&gt;
+  &lt;li&gt;触发屏幕渲染后 这种情况发生在 每一帧 ,界面如果在滚动过程中 有大量的离屏渲染发生会严重影响帧率&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;####2. 影响离屏渲染的原因
+* GPU版本的离屏渲染 -&amp;gt;
+更改 mask,shadow,Group opacity,edge antialiasing 
+* CPU 版本的离屏渲染 -&amp;gt; 
+使用 Core Graphic 里面的绘制 API 也会触发离屏渲染 ,比如 drawRect:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;系统圆角的离屏渲染&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;view.layer.cornerRadius = aRadius;
+view.layer.maskToBounds = true 
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;####3. 圆角解决方案 
+* 异步绘制圆角
+* 本地图片 让 UI 提供圆角图片
+* 使用遮罩 ,边缘让背景色 和 周边颜色 保持一致 ;中间为透明色&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;###4. 本文中涉及的基础知识
+#####4.1  UIView 与 CALayer 的关系&lt;/p&gt;
+
+&lt;p&gt;CALayer 负责显示内容 contents&lt;/p&gt;
+
+&lt;p&gt;UIView 负责为其提供内容,以及负责处理触摸事件,参与响应链&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;CALayers have their own background , border and contents&lt;/li&gt;
+  &lt;li&gt;contents 必须为一个 CGImage 才能显示&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;#####4.2 UIImageView 
+* UIImage 是对CGImage 的一个轻量的封装 (UIImage is a lightweight wrapper around CGImage )
+* CALayer also has CGImage as contents
+* CGImage backed by file or data,eventually by bitmap&lt;/p&gt;
+
+&lt;p&gt;#####4.3 RoundedCorner 
+* cornerRadius 的英文说明
+* Setting the radius to a value greater than 0.0 causes the layer to begin drawing rounded corners on its background. By default,the corner radius does not apply to the image in the layer’s contents property ;it applies only to the background color and border of the layer . However, setting the masksToBounds property to YES causes the content to be clipped to the rounded corners.
+* 只对前景框和背景色起作用&lt;/p&gt;
+
+&lt;p&gt;#####4.4 重绘方案的优化
+* 将图像重新绘制为圆角图像相当于多了一份,要不要缓存? 
+* A 第一次重绘后将这些圆角图像缓存在磁盘里,第二次加载直接使用缓存的圆角图像;
+* B 直接保存在内存里,在内存比较吃紧时显然不是个好选择
+* C 不缓存,和系统圆角一样,每次都重绘,浪费电量&lt;/p&gt;
+
+&lt;p&gt;#####4.5 文本视图类上实现圆角 
+* UTextField 自带圆角效果
+* UILabel  UITextView 首先保证contents 呈现透明的背景色 ,只需要设置 layer 的 backgroundColor ,再加上 cornerRadius 就 OK&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;阴影设置 shadowPath ,默认为 nil&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Sat, 14 May 2016 22:14:30 +0800</pubDate>
+        <link>/2016/05/iOS-%E7%A6%BB%E5%B1%8F%E6%B8%B2%E6%9F%93%E8%AE%A4%E7%9F%A5/</link>
+        <guid isPermaLink="true">/2016/05/iOS-%E7%A6%BB%E5%B1%8F%E6%B8%B2%E6%9F%93%E8%AE%A4%E7%9F%A5/</guid>
+        
+        
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>jekyll环境</title>
+        <description>&lt;p&gt;#终端-ಥ_ಥ
+从前天网上一直在整个人博客的事情, 本来很简单的事,可能因为 Mac 电脑系统升级,自带的 ruby 和安装的 gem,jekyll 都是新的版本,中间报各种各样难懂的错误,Google 了两天还是没有解决,真心累啊&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;1.没有权限&lt;/h2&gt;
+&lt;p&gt;## 2.gem jekyll 版本错误
+## 3.gem 源被墙&lt;/p&gt;
+
+&lt;p&gt;##&lt;a href=&quot;http://pizida.com/technology/2016/03/03/use-jekyll-create-blog-on-github/#jekyll-2&quot;&gt;jekyll 部署链接&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 12 May 2016 21:57:24 +0800</pubDate>
+        <link>/2016/05/%E5%A4%B1%E8%B4%A5%E7%9A%84%E6%9C%AC%E5%9C%B0%E5%8D%9A%E5%AE%A2%E5%88%9B%E5%BB%BA/</link>
+        <guid isPermaLink="true">/2016/05/%E5%A4%B1%E8%B4%A5%E7%9A%84%E6%9C%AC%E5%9C%B0%E5%8D%9A%E5%AE%A2%E5%88%9B%E5%BB%BA/</guid>
+        
+        
+      </item>
+    
   </channel>
 </rss>

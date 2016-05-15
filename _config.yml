@@ -1,18 +1,18 @@
 # Basic
-title: JonSir’Blog
+title: Jay’Blog
 subtitle: Valar Morghulis Valar Dohaeris 
-welcome_message: <a href="https://github.com/JonSir/” target="_blank"></a>
+welcome_message: <a href="https://github.com/manajay/” target="_blank"></a>
 description: 静下心来,用心观察 处处都透着生活的美 .
 creator: <a href="http://onev.cat">@onevcat</a>
 
-url: "https://github.com/JonSir/"
+url: "https://github.com/manajay/“
 
 permalink: /:year/:month/:title/
 
 # Format
-highlighter: plain
-markdown: redcarpet
-redcarpet:
+highlighter: plain  
+markdown: kramdown
+kramdown:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", tables]
 
 # supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
@@ -41,9 +41,9 @@ comment:
 # Social
 social:
     weibo: 鼻涕虫匹诺曹
-    github:  jonsir
+    github:  manajay
     twitter: Johnny_The_D
-    mail: ljduan2013@gmail.com
+    mail: manajay.dlj@gmail.com
 
 # Google Analytics
 ga:

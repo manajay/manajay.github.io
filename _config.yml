@@ -5,7 +5,7 @@ subtitle: Valar Morghulis Valar Dohaeris
 #welcome_message: <a href="https://github.com/manajay/" target="_blank">求知,在 Github</a>
 
 #disqus_url
-url: https://manajay.github.io
+url: "http://manajay.github.io/"
 
 description: 静下心来,用心观察 处处都透着生活的美.
 
@@ -34,7 +34,9 @@ paginate_path: "page/:num/"
 # Comment
 comment:
     disqus: manajay
-    # duoshuo: 
+    #provider : duoshuo
+    #duoshuo :
+    #short_name : manajay
     
 # Social
 social:

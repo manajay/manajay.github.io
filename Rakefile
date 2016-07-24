@@ -27,7 +27,7 @@ task :new do
 			file.puts "layout: post"
 			file.puts "title: #{@name}"
 			file.puts "subtitle: #{@subtitle}"
-			file.puts "author: pizida"
+			file.puts "author: manajay”
 			file.puts "date: #{Time.now}"
 			file.puts "categories: #{@categories}"
 			file.puts "tag: #{@tag}"

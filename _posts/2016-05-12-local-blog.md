@@ -36,7 +36,7 @@ date: 2016-05-12 22:57:24.000000000 +09:00
 命令为 :   
 gem sources --add https://gems.ruby-china.org/ --remove https://rubygems.org/
 
-不使用 淘宝的源了 
+不使用 淘宝的源<已停止更新>了 
 
 
 本文参考了下面的部署方法 ,点击链接 进入查看
@@ -45,3 +45,4 @@ gem sources --add https://gems.ruby-china.org/ --remove https://rubygems.org/
 
 
 [jekyll 本地部署链接]: http://pizida.com/technology/2016/03/03/use-jekyll-create-blog-on-github/
+

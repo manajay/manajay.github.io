@@ -1,4 +1,8 @@
-# 项目中常见的 error 及 解决方案
+---
+layout: post
+title: 项目中常见的 error 及 解决方案
+date: 2016-08-23 14:15:32.000000000 +09:00
+---
 
 ## 1. 集成SSZipArchive
 ```

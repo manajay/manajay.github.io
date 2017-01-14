@@ -1,9 +1,9 @@
 ---
 layout: post
-title: iOS 离屏渲染 认知
+title: iOS离屏渲染
+tag: iOS性能优化
 date: 2016-05-14 23:14:30.000000000 +09:00
 ---
-[离屏渲染obj中国]
 
 [离屏渲染obj中国]: http://objccn.io/issue-3-1/
 

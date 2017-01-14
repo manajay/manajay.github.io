@@ -1,6 +1,7 @@
 ---
 layout: post
 title: jekyll环境
+tag: ruby
 date: 2016-05-12 22:57:24.000000000 +09:00
 ---
 

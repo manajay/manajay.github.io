@@ -1,12 +1,13 @@
 ---
 layout: post
 title: 项目 project 与 target 动态库 静态库的知识
+tag: iOS开发技巧
 date: 2016-08-09 09:49:02.000000000 +09:00
 ---
 
 **本文是阅读笔记, 原本在 最下面**
-## 项目 project 与 target 动态库 静态库的知识
 
+## 项目 project 与 target 动态库 静态库的知识
 
 > 1. project就是一个项目，或者说工程，一个project可以对应多个target
 > 2. targets之间完全没有关系。但target和project有关系，target的setting会从project settings中继承一部分

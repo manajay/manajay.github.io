@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 开发中 waning 的 解决方案
+tag: iOS开发技巧
 date: 2016-08-08 10:05:24.000000000 +09:00
 ---
 

@@ -12,6 +12,7 @@ date: 2017-01-19 11:09:25.000000000 +09:00
 mac安装使用Ruby 最安全方便的方式就是使用RVM
 
 ## 1.2 安装RVM
+
 ### 1.2.1 官方推荐安装RVM方式
 不过我尝试安装的时候 官方推荐的方式每次都失败,
 
@@ -72,6 +73,7 @@ rvm use 2.4.0  --default
 参考链接:
 [Mac OS X 下使用 Ruby Gem 的两个坑](https://argcv.com/articles/4429.c)
 [Mac OS X 上安装 Ruby](https://github.com/ruby-china/homeland/wiki/Mac-OS-X-上安装-Ruby)
+
 #### 2.1. 先安装Homebrew
 
 [参考我的Homebrew文章](http://manajay.github.io/2017/01/homebrew-clean-install/)
@@ -79,6 +81,7 @@ rvm use 2.4.0  --default
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
+
 #### 2.2 安装`Ruby`
 
 ```

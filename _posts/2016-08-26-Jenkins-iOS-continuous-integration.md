@@ -7,7 +7,6 @@ date: 2016-08-26 09:57:32.000000000 +09:00
 
 [本文转自构建iOS持续集成平台（一）——自动化构建和依赖管理](http://www.infoq.com/cn/articles/build-ios-continuous-integration-platform-part1)
 
-
 __xcodebuild__: 打包
 
 在介绍`xcodebuild`之前，需要先弄清楚一些在`Xcode`环境下的一些概念：

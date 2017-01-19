@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jenkins - 持续化集成篇
+title: Jekyll<二> 本地打包环境
 tag: 持续化集成
 date: 2016-08-26 09:57:32.000000000 +09:00
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Jekyll<二> 本地打包环境
 tag: 持续化集成
-date: 2016-08-26 09:57:32.000000000 +09:00
+date: 2016-08-26 09:57:32 +09:00
 ---
 
 [本文转自构建iOS持续集成平台（一）——自动化构建和依赖管理](http://www.infoq.com/cn/articles/build-ios-continuous-integration-platform-part1)

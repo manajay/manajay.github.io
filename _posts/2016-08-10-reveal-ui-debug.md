@@ -2,7 +2,7 @@
 layout: post
 title: Reveal - 界面调试利器
 tag: iOS开发技巧
-date: 2016-08-10 09:33:32.000000000 +09:00
+date: 2016-08-10 09:33:32 +09:00
 ---
 
 [@Manajay:我的简书](http://www.jianshu.com/users/089cf0c28ed5/latest_articles)

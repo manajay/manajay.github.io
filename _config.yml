@@ -1,8 +1,8 @@
 # Basic
-title: Manajay’ Blog
+title: mana jay
 subtitle: Valar Morghulis Valar Dohaeris
 
-#welcome_message: <a href="https://github.com/manajay/" target="_blank">求知,在 Github</a>
+#welcome_message: <a href="https://github.com/manajay/" target="_blank">拥抱开源,在 Github</a>
 
 #disqus_url
 url: "http://manajay.github.io/"
@@ -23,11 +23,17 @@ cover_color: gray
 # The blog button should not be removed.
 blog_button:
     title: 博客
-    description: 访问博客
+    description: 最近更新
+
+# Navigation buttons in the front page.s
+nav:
+    - {title: 所有文章, description: archive, url: '/archive'}   
+    - {title: 标签, description: tags, url: '/tags'}      
+    - {title: 关于我, description: about, url: '/about'}  
 
 
 # Pagination
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 paginate: 10
 paginate_path: "page/:num/"
 

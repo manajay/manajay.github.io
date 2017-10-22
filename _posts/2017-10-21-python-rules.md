@@ -122,6 +122,44 @@ title_node = soup.find('dd', class_="lemmaWgt-lemmaTitle-title").find('h1')
 python文本的最后只有一个空白行.
 
 
+### 'ascii' codec can't encode characters in position 
+
+问题是 字符串编码异常 
+我们知道字符串有两种表示方式:
+
+* utf-8 字符串 也就是 str 类型
+* unicode 字符串
+
+而对于编码则有
+
+* ascii
+* gbk
+
+不同的字符串 对于编码的要求如下:
+
+
+``` python
+# 用 ascii 编码含中文的 unicode 字符串  
+u.encode('ascii')  # 错误，因为中文无法用 ascii 字符集编码  
+                   # UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)  
+  
+# 用 gbk 编码含中文的 unicode 字符串  
+u.encode('gbk')  # 正确，因为 '关关雎鸠' 可以用中文 gbk 字符集表示  
+                 # '\xb9\xd8\xb9\xd8\xf6\xc2\xf0\xaf'  
+                 # 直接 print 上面的 str 会显示乱码，修改环境变量为 zh_CN.GBK 可以看到结果是对的  
+  
+# 用 ascii 解码 utf-8 字符串  
+s.decode('ascii')  # 错误，中文 utf-8 字符无法用 ascii 解码  
+                   # UnicodeDecodeError: 'ascii' codec can't decode byte 0xe5 in position 0: ordinal not in range(128)  
+  
+# 用 gbk 解码 utf-8 字符串  
+s.decode('gbk')  # 不出错，但是用 gbk 解码 utf-8 字符流的结果，显然只是乱码  
+                 # u'\u934f\u51b2\u53e7\u95c6\u5ea8\u7b2d'  
+```
+
+以上摘自博客[也谈 Python 的中文编码处理](http://in355hz.iteye.com/blog/1860787)
+
+所以对于中文编码如果出现上述问题,调整编码策略即可.
 
 
 

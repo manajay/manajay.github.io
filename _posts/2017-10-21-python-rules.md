@@ -2,7 +2,7 @@
 layout: post
 title: python 语法警告
 date: 2017-10-21 19:59:36 +0300 
-tags: [Warning,Python] 
+tags: [Warning , Python] 
 ---
 
 ## 语法的指导规则是 `PEP 8`

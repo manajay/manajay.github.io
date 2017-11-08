@@ -6,7 +6,9 @@ date: 2017-11-08 17:42:31 +09:00
 ---
 
 
-va.lang.NoClassDefFoundError: org/springframework/core/MethodClassKey`
+### 问题描述
+
+简单叙述 `java.lang.NoClassDefFoundError: org/springframework/core/MethodClassKey`
 
 查找源码 发现 `MethodClassKey` 这个.类是在`org.springframework.transaction.interceptor.AbstractFallbackTransactionAttributeSource.getCacheKey`中被调用的,而项目中的**spring 4.2.6 Release** 的 `AbstractFallbackTransactionAttributeSource` 中 是没有`getCacheKey`这个方法, 说明项目存在jar包冲突问题. 
 

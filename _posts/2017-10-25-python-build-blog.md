@@ -2,7 +2,7 @@
 layout: post
 title: python 构建博客
 date: 2017-10-25 14:33:30 +0300 
-tags: [Python] 
+tags: [Python, 博客]
 ---
 
 ### 构建的环境 架构

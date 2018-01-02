@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  iOS组件化(基于Cocoapods)-简单使用 
-tag: iOS
+tag: [iOS, 组件化]
 date: 2017-06-30 12:42:46 +09:00
 ---
 

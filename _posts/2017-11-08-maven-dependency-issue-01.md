@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  maven 依赖冲突示例<一>
-tag: Java Maven
+tag: Maven
 date: 2017-11-08 17:42:31 +09:00
 ---
 

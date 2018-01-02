@@ -1,7 +1,7 @@
 ---
 layout: post
 title: xcodebuild 相关关键字
-tag: 持续化集成
+tag: [iOS, 自动化]
 date: 2016-08-26 09:57:32 +09:00
 ---
 

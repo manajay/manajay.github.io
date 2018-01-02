@@ -1,11 +1,10 @@
 ---
 layout: post
 title: Reveal - 界面调试利器
-tag: iOS开发技巧
+tag: iOS
 date: 2016-08-10 09:33:32 +09:00
 ---
 
-[@Manajay:我的简书](http://www.jianshu.com/users/089cf0c28ed5/latest_articles)
 ## Reveal
 
 * 时时查看 真机或模拟器 的UI 显示 情况;

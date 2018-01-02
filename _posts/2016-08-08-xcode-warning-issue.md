@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 开发中 warning 的 解决方案
-tag: iOS开发技巧
+tag: iOS
 date: 2016-08-08 10:05:24 +09:00
 ---
 

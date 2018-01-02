@@ -1,11 +1,11 @@
 ---
 layout: post
 title: 项目 project 与 target 动态库 静态库的知识
-tag: iOS开发技巧
+tag: iOS
 date: 2016-08-09 09:49:02 +09:00
 ---
 
-**本文是阅读笔记, 原本在 最下面**
+**本文是阅读笔记, 原文在 最下面**
 
 ## 项目 project 与 target 动态库 静态库的知识
 

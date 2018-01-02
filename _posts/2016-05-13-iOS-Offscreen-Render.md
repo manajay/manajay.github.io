@@ -1,7 +1,7 @@
 ---
 layout: post
 title: iOS离屏渲染
-tag: iOS性能优化
+tag: iOS
 date: 2016-05-14 23:14:30 +09:00
 ---
 

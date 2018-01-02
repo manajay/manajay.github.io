@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ApacheBench的 认知与安装
-tag: Test
+tag: [测试, 自动化]
 date: 2017-03-22 14:05:46 +09:00
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 极光推送的使用
-tag: App Push,极光推送
+tag: [iOS, 推送]
 date: 2017-05-19 00:42:46 +09:00
 ---
 

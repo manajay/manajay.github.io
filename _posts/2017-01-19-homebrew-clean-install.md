@@ -1,15 +1,12 @@
 ---
 layout: post
-title: 正确安装Homebrew
-tag: Homebrew,包管理工具
+title: 正确安装homebrew
+tag: homebrew
 date: 2017-01-19 12:23:32 +09:00
 ---
 
-## 安装位置
+* 正确安装位置 `/usr/local`, 不需要你`sudo` 破坏原系统文件.
 
-`/usr/local` 这个才是正确位置, 不需要你`sudo` 破坏原系统文件.
-
-## Clean Install
 
 ### 如果以前安装过,建议首先清理一下系统环境
 
@@ -20,31 +17,29 @@ rm -rf Library .git .gitignore bin/brew README.md share/man/man1/brew
 rm -rf ~/Library/Caches/Homebrew
 ```
 
-### Install
+### 安装命令
 
 * 注意前面的  `/usr/bin/ruby -e` 一定要有
 
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
-* Homebrew 会将套件安装到独立目录，并将文件软链接至 /usr/local 。
 
-
-* 自检
-
-`brew doctor`  
-如果显示 
-`Your system is ready to brew`
-恭喜你 安装成功了~
-
-* 一般`brew`都有的包
+* `homebrew` 会将套件安装到独立目录，并将文件软链接至 `/usr/local` 。
+* `brew doctor` 自检,查看安装后的`brew`是否有问题, 如果显示 `Your system is ready to brew`, 那就表示安装成功了~
+* `brew list`显示已经安装的包
 
 ```
-autoconf		libksba			readline
-automake		libtool			ruby
-cocoapods		libyaml			zlib
-coreutils		openssl			zsh-autosuggestions
-libgpg-error		pkg-config
+adns			gmp			libimobiledevice	maven@3.3		pinentry		tomcat
+autoconf		gnupg			libksba			mysql			pkg-config		tree
+automake		gnutls			libplist		nettle			protobuf		usbmuxd
+brew-cask-completion	icu4c			libtasn1		nginx-full		python			x264
+carthage		jenkins			libtool			node			python3			xvid
+cocoapods		lame			libunistring		npth			readline		xz
+coreutils		libassuan		libusb			openssl			redis
+ffmpeg			libffi			libxml2			openssl@1.1		rtmp-nginx-module
+gdbm			libgcrypt		libyaml			p11-kit			sqlite
+gettext			libgpg-error		makedepend		pcre			swiftlint
 ```
 
 
@@ -57,5 +52,5 @@ libgpg-error		pkg-config
 
 * [Homebrew 完全卸载](http://www.jianshu.com/p/18772092ee6b)
 
-
+## 有问题,请issue我
 

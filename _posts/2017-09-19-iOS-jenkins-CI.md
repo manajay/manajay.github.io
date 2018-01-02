@@ -32,21 +32,23 @@ date: 2017-05-18 22:44:46 +09:00
 3、终端启动命令: `jenkins` 
 4、浏览器访问`jenkins`地址: ``` http://localhost:8080/ ``` , 如果不能正常访问,要么**Java**环境出问题,要么`jenkins`没有启动; Java环境的去官网下载最新的**jdk**安装;[jenkins开关命令](http://damien.co/general/how-to-start-stop-restart-or-reload-jenkins-mac-osx-8022)
 5、 正常的浏览器启动页面是如下的 
-![浏览器启动页面](http://upload-images.jianshu.io/upload_images/1435355-a799d9c0f90a8575.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![浏览器启动页面](/assets/post/unlock-jenkins.jpg)
 
 根据提示修改文件夹权限,获取密钥,登录**jenkins**
 6、安装插件 ,**Jenkins**功能很多以来相应的插件,简化了接入的难度
 > 最好先跳过这一步,因为电脑环境问题,有些插件是需要翻墙安装,所以导致jenkins安装插件的时候,会卡在一个地方,然后就一直卡着,我安装过多次jenkins,因为这个问题,__我习惯于跳过插件安装,先登录配置好环境,然后再手动安装插件__!!!!!!!!!
 
-![install plugins](http://upload-images.jianshu.io/upload_images/1435355-29e897f8b9f57399.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![install plugins](/assets/post/custom-jenkins.png)
 
 如果出现一只卡死在安装插件的界面,关机重启,重新启动**Jenkins**后,登录`http://localhost:8080` 进入管理员注册页面
 7、 管理员注册
 要牢记这个名称,如果是自己测试用,直接用 `admin admin` 这种更简单的组合.
-![管理员注册](http://upload-images.jianshu.io/upload_images/1435355-a9cfbda83b38e803.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![管理员注册](/assets/post/create-jenkins-admin.png)
 
 8、 进入首页,首先将需要安装的插件 再次补充全
-![补全插件](http://upload-images.jianshu.io/upload_images/1435355-3170be2b2cd37093.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![补全插件](/assets/post/fix-jenkins-plugins.png)
+
 需要的插件如下
  * `Git` , `Gitlab`,`SVN` , `SSH Credentials`用于授权后拉取远程库的代码
  * `Keychains and Provisioning Profiles Management`: 证书与描述文件的管理
@@ -58,20 +60,20 @@ date: 2017-05-18 22:44:46 +09:00
  
 9、配置项目的访问**ssh**私钥 
 
-![SSH-private-key](http://upload-images.jianshu.io/upload_images/1435355-52c05a5178463781.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![SSH-private-key](/assets/post/jenkins-configuration.png)
 
 根据图上的路径 
 
-![SSH](http://upload-images.jianshu.io/upload_images/1435355-63680d56bfa627c0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![SSH](/assets/post/jenkins-ssh.png)
+
 
 添加`SSH`的私钥, 一般你项目的访问私钥是 `~/.ssh/id_rsa` 这个文件,如果没有配置,则询问你的源代码的管理员
 
-![id_rsa](http://upload-images.jianshu.io/upload_images/1435355-62bf3328f1642673.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
+![id_rsa](/assets/post/jenkins-ssh-key.png)
 
 如果私钥是错误的,则配置项目的时候会出现下面👇的错误
 
-![wrong private key](http://upload-images.jianshu.io/upload_images/1435355-b42c74fa130ef571.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![wrong private key](/assets/post/jenkins-git-ssh.png)
 
 所以务必要明白,项目的私钥是如何配置的. 需不需要口令码!!!
 如果是公司项目,询问运维,当然一般运维会搭建jenkins(iOS必须要在Mac电脑上面搭建,如果是给JAVA使用,一般用linux,不能打包iOS).
@@ -79,38 +81,33 @@ date: 2017-05-18 22:44:46 +09:00
 
 10、配置项目依赖的证书与描述文件
 
-![login key](http://upload-images.jianshu.io/upload_images/1435355-016e6ac58371e8a6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
+![login key](/assets/post/jenkins-login-key.png)
 
 进入后的界面是
 
-![upload login-keychains](http://upload-images.jianshu.io/upload_images/1435355-25d1771ca35c0c29.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
+![upload login-keychains](/assets/post/jenkins-ios-keychains.png)
 
 主要有两个步骤,
 ①是 上传钥匙串的 `login.keychain` , mac地址```~/Library/Keychains/```
 
-![login-keychains location](http://upload-images.jianshu.io/upload_images/1435355-cbe7014085b99ba3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![login-keychains location](/assets/post/login-keychains-location.png)
 
 
 ② 设置参数
 
-![login-keychains password](http://upload-images.jianshu.io/upload_images/1435355-ddaa91dbbd7672a8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
+![login-keychains-password](/assets/post/login-keychains-password.png)
 
 **注意** 证书的名称就是本机钥匙串,安装后的证书简介的 **常用名称**
 
-![common name](http://upload-images.jianshu.io/upload_images/1435355-50cd822e89016c81.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
+![common name](/assets/post/ios-p12-name.png)
 
 描述文件的地址 一般是 ```~/Library/MobileDevice/Provisioning Profiles```
 不过我多次尝试 发现配置项目的时候 并没有得到描述文件,后面只能用脚本自己打包的
 
 11、创建新的项目
-![new job](http://upload-images.jianshu.io/upload_images/1435355-13ccbeb77ec5c460.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![jenkins-new-job](/assets/post/jenkins-new-job.png)
 选择项目的类型
-![new job setting](http://upload-images.jianshu.io/upload_images/1435355-27fba6ae909b3732.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
+![jenkins-new-job-setting](/assets/post/jenkins-new-job-setting.png)
 
 进入项目的配置页面
 

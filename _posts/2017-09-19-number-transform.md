@@ -26,12 +26,9 @@ date: 2017-08-12 22:43:46 +09:00
 ```
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1435355-549f794eee290cab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![number-transfor-1](/assets/post/number-transfor-01.png)
 
-
-
-![image.png](http://upload-images.jianshu.io/upload_images/1435355-757d75746a02ad84.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
+![number-transfor-2](/assets/post/number-transfor-02.png)
 
 ```
 #import "NSNumberTest.h"

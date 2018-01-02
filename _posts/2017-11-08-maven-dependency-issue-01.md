@@ -59,13 +59,15 @@ Caused by: java.lang.ClassNotFoundException: org.springframework.core.MethodClas
 
 idea中 点击下面的方法
 
-![image.png](http://upload-images.jianshu.io/upload_images/1435355-91d1d90ee323cd20.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![maven-conflict-01](/assets/post/maven-conflict-01.png)
 
 发现该方法为 `tx-4.3.7.RELEASE`
-![image.png](http://upload-images.jianshu.io/upload_images/1435355-843272d2e77e61bf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![maven-conflict-02](/assets/post/maven-conflict-02.png)
+
 
 使用 maven的分支工具 `Dependency Analyzer` 查看 `tx`的相关信息如下
-![image.png](http://upload-images.jianshu.io/upload_images/1435355-4088fe3b98ea12ac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![maven-conflict-03](/assets/post/maven-conflict-03.png)
+
 
 项目中`redis`的依赖 `tx`包版本为`4.3.7.RELEASE`, 所以只要排除这个依赖,再重新`reimport`一下`maven`即可
 

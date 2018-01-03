@@ -7,7 +7,7 @@ date: 2017-05-19 00:42:46 +09:00
 
 #### 苹果的APNS
 
-![image.png](http://upload-images.jianshu.io/upload_images/1435355-7bee00450e451e8d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](/assets/post/ios-push-flow.png)
 
 
 1. 用户的应用注册了`APNS` 消息推送功能
@@ -19,7 +19,7 @@ date: 2017-05-19 00:42:46 +09:00
 
 #### 极光推送的流程
 
-![极光推送](http://upload-images.jianshu.io/upload_images/1435355-fb225c66ca651fe5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![极光推送](/assets/post/jpush-flow.png)
 
 这里和上面唯一不同的就是, 应用的服务器改为了 极光的服务器
 
@@ -30,13 +30,13 @@ date: 2017-05-19 00:42:46 +09:00
 
 #### 实际编程的注意点
 
-![image.png](http://upload-images.jianshu.io/upload_images/1435355-79c43e85c70a71f4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](/assets/post/push-notification-flow.png)
 
 1、极光后台的生成环境和发布环境证书必须有效
-![image.png](http://upload-images.jianshu.io/upload_images/1435355-305da2ee3a0d8d45.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](/assets/post/push-notification-cer.png)
 2、 应用需要先注册和激活极光服务
 
-![image.png](http://upload-images.jianshu.io/upload_images/1435355-1b84ac49938762ba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![push-notification-service.png](/assets/post/push-notification-service.png)
 
 3. 应用获取到APNS下发的`DeviceToken`后,需要上传到极光服务器
 4. 应用的极光登录成功方法回调,说明服务器已经收到的应用的设备信息,并且返回了`registrationID`
@@ -263,13 +263,19 @@ jpush已登录,通知详情-(null)
 
 #### 参考链接
 
-[iOS远程推送通知 APNs远程推送,极光推送](http://www.jianshu.com/p/c623c2b5966a)
-[做推送，怎么能不了解推送的 4 种消息形式呢](http://blog.jiguang.cn/4-push-ios/)
-[ios 极光推送的集成及注意事项](http://www.jianshu.com/p/1d37efd7d65c)
-[常见问题 - JPush 合集（持续更新](https://community.jiguang.cn/t/jpush/5145/4)
-[iOS App卸载重装后生成了新的registrationID，导致很多无效的ID](https://community.jiguang.cn/t/ios-app-registrationid-id/11497)
-[04.iOS远程推送通知 APNs远程推送,极光推送](http://www.jianshu.com/p/c623c2b5966a)
-[「使用心得」使用 JPush iOS SDK 注意事项](https://community.jiguang.cn/t/jpush-ios-sdk/3443)
+* [iOS远程推送通知 APNs远程推送,极光推送](http://www.jianshu.com/p/c623c2b5966a)
+
+* [做推送，怎么能不了解推送的 4 种消息形式呢](http://blog.jiguang.cn/4-push-ios/)
+
+* [ios 极光推送的集成及注意事项](http://www.jianshu.com/p/1d37efd7d65c)
+
+* [常见问题 - JPush 合集（持续更新](https://community.jiguang.cn/t/jpush/5145/4)
+
+* [iOS App卸载重装后生成了新的registrationID，导致很多无效的ID](https://community.jiguang.cn/t/ios-app-registrationid-id/11497)
+
+* [04.iOS远程推送通知 APNs远程推送,极光推送](http://www.jianshu.com/p/c623c2b5966a)
+
+* [「使用心得」使用 JPush iOS SDK 注意事项](https://community.jiguang.cn/t/jpush-ios-sdk/3443)
 
 
 

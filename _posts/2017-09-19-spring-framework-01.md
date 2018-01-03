@@ -8,7 +8,7 @@ date: 2017-09-04 18:52:46 +09:00
 新手入门认识，有认识错误，请严厉批评
 
 
-![框架](http://upload-images.jianshu.io/upload_images/1435355-4f38b431c4af0a80.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![spring-framework框架](/assets/post/spring-framework-runtime.png)
 
 ### 核心概念
 
@@ -90,7 +90,7 @@ IoC核心是 顶层 组件与应用的基础，所有的其他功能都是在这
 
 三者是相互联系，依赖的
 
-![image.png](http://upload-images.jianshu.io/upload_images/1435355-0a0f633f651924b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](/assets/post/spring-dependency.png)
 
 ### aop
 
@@ -99,8 +99,7 @@ IoC核心是 顶层 组件与应用的基础，所有的其他功能都是在这
 * Instrumentation
 * Messaging
 
-
-![image.png](http://upload-images.jianshu.io/upload_images/1435355-d22792188709bb8f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](/assets/post/spring-dependency-aop.png)
 
 ### 持久层
 
@@ -111,7 +110,7 @@ IoC核心是 顶层 组件与应用的基础，所有的其他功能都是在这
 * Transactions 事务管理
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1435355-b38b48e244c49ba5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](/assets/post/spring-dependency-full.png)
 
 ### Web
 
@@ -121,10 +120,9 @@ IoC核心是 顶层 组件与应用的基础，所有的其他功能都是在这
 * Structs --> WebSocket
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1435355-dc6f32646c92ccc5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](/assets/post/spring-dependency-web.png)
 
-
-![image.png](http://upload-images.jianshu.io/upload_images/1435355-a7f4333057f55da9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](/assets/post/spring-dependency-messaging.png)
 
 
 ## 参考链接

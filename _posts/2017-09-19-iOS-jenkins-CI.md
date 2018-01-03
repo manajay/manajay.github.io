@@ -111,56 +111,56 @@ date: 2017-05-18 22:44:46 +09:00
 
 进入项目的配置页面
 
-![configuration](http://upload-images.jianshu.io/upload_images/1435355-c49f4e442ff9ba6a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![configuration](/assets/post/jenkins-job-config.png)
 
-![all setting items](http://upload-images.jianshu.io/upload_images/1435355-6808d6a29a3db867.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![all setting items](/assets/post/jenkins-item-config.png)
 
 丢弃旧的构建 ,可以自己定义策略
 
-![drop old builds](http://upload-images.jianshu.io/upload_images/1435355-6b954151b9f21363.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![drop old builds](/assets/post/jenkins-build-settings.png)
 
 设置 源码的 拉取, 这一步 主要是可能卡在 私钥的配置上面,所以一定要明确SSH的配置(见上面的说明)
 
-![fetch origin code](http://upload-images.jianshu.io/upload_images/1435355-91ec9153720d1fad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![fetch origin code](/assets/post/jenkins-job-git-config.png)
 
 构建触发器 , 这里主要是 定时去 自动化打包项目
 
-![triger](http://upload-images.jianshu.io/upload_images/1435355-a1a25a0f6373893e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![triger](/assets/post/jenkins-job-build-time.png)
 
 
 构建环境, 主要配置的是 证书与描述文件
 
-![keychain](http://upload-images.jianshu.io/upload_images/1435355-9397806cd4d49720.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![keychain](/assets/post/jenkins-keychains-codesign.png)
 
 下面是正确的环境[链接在此](http://www.jianshu.com/p/3b43776ed73f),我不知道是不是xcode8之后才有的这问题,还是我使用`homebrew`确实获取不到. 
 
-![others keychains](http://upload-images.jianshu.io/upload_images/1435355-be2a2e08897eeb9a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![others keychains](/assets/post/jenkins-build-job-setting-config.png)
 
 Xcode的配置 
 
-![Xcode](http://upload-images.jianshu.io/upload_images/1435355-35f12ef3ca97bee0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Xcode](/assets/post/jenkins-codesign-keychains.png)
 
 具体配置
 
-![Xcode build settings](http://upload-images.jianshu.io/upload_images/1435355-5c862c610dc5951d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Xcode build settings](/assets/post/jenkins-ios-job-general-settings.png)
 
 钥匙串 选择配置好的钥匙串
 
-![Xcode code sign](http://upload-images.jianshu.io/upload_images/1435355-5dd32df7bf54fb8c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Xcode code sign](/assets/post/jenkins-keychain-ios.png)
 
 其他的编译打包参数 , 如果使用了cocoapods还需要指定具体的一些参数,并且执行脚本,拉取依赖的远程库
 
-![Xcode Project setting](http://upload-images.jianshu.io/upload_images/1435355-d5942b738003d1c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Xcode Project setting](/assets/post/jenkins-ios-archive-config.png)
 
 最最重要的来了,打包的脚本
 
-![build shell](http://upload-images.jianshu.io/upload_images/1435355-7e18bdff0946ed7c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![build shell](/assets/post/jenkins-job-shell.png)
 
 如果使用了 `cocoapods` 则需要提供拉取依赖库的代码 否则请忽略这一步(比如我们叮叮暂时没有)
 分别是 指定这是一个脚本(截图有问题,应该是`#bin/bash -l`), `podfile`文件的 中文格式编码, 切换到`podfile`的路径下,拉取依赖的`pod`
-![pod shell](http://upload-images.jianshu.io/upload_images/1435355-707537a58c622fd0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![pod shell](/assets/post/jenkins-ios-job-build-shell.png)
 
-![archive build](http://upload-images.jianshu.io/upload_images/1435355-e135c3cc962151a2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![archive build](/assets/post/jenkins-job-ios-shell.png)
 
 具体的代码如下
 
@@ -181,9 +181,9 @@ CODE_SIGN_IDENTITY="iPhone Developer: xxxx"
 
 注意 scheme 一定还要勾选 分享 
 
-![scheme of project](http://upload-images.jianshu.io/upload_images/1435355-fc5974e6ea8133a7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![scheme of project](/assets/post/ios-scheme.png)
 
-![share scheme](http://upload-images.jianshu.io/upload_images/1435355-982a3a41f77f7ac9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![share scheme](/assets/post/jenkins-ios-archive-share.png)
 
 并且注意 不同的打包`method` 要对应好. 
 
@@ -199,43 +199,43 @@ PROVISIONING_PROFILE="iPhone Developer: xxxx"
 
 这里有一个注意点 就是 `exportOptionsPlist` ,需要自己在项目中配置 相应的信息 
 
-![exportOptionsPlist](http://upload-images.jianshu.io/upload_images/1435355-f023f5b4aae71f0b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![exportOptionsPlist](/assets/post/jenkins-ios-exportplist.png)
 
 一切顺利就可以正常打包了 
 后面就是打包后 上传到 fir.im或者是蒲公英 给测试团队 .
 
-![fir.im plugin](http://upload-images.jianshu.io/upload_images/1435355-48387a9ad496cf5a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![fir.im plugin](/assets/post/jenkins-fir.im.png)
 
 还有就是 邮件通知 
 
-![email plugin](http://upload-images.jianshu.io/upload_images/1435355-9f8313e92bb2b9e1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![email plugin](/assets/post/jenkins-email.png)
 
 12、 正常使用
 
-![build by hand](http://upload-images.jianshu.io/upload_images/1435355-232ea37d20c2b55b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![build by hand](/assets/post/jenkins-build.png)
 
 点击进入控制台输出,查看运行的细节
 
-![log](http://upload-images.jianshu.io/upload_images/1435355-a540237aa6513523.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![log](/assets/post/jenkins-log.png)
 
 #### 团队的使用
 1、 设置一个 局域网的固定访问地址
 
-![custom jenkins url](http://upload-images.jianshu.io/upload_images/1435355-21779d7fc57e2684.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![custom jenkins url](/assets/post/jenkins-url.png)
 
 公司内其他同事就可以通过这个地址,访问`jenkins` 自己去配置项目,进行打包
 2、 设置jenkins运行电脑的安装工作目录 为 分享目录
 
-![share files(http://upload-images.jianshu.io/upload_images/1435355-25ba6162e97b27a9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![share files](/assets/post/mac-share-file-location.png)
 
-![configurate share files](http://upload-images.jianshu.io/upload_images/1435355-2fd0482680558e91.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![configurate share files](/assets/post/mac-share-01.png)
 
-![jenkins' workspace](http://upload-images.jianshu.io/upload_images/1435355-5002a6a4e07fa1bc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![jenkins' workspace](/assets/post/mac-share.png)
 
 同事可以通过**Finder** 访问共享的电脑,找到`manajay`名称的电脑,选择连接,可以设置密码,我直接让同事可以以客人的身份,无密码访问`jenkins`下的 `workspace`目录.
 这样即使 上传失败,自己可以获取到ipa包,自己分发.
 3、 jenkins 设置成,开机自启的程序 [brewed-jenkins小插件](https://github.com/fastlane/brewed-jenkins)
-![brewed-jenkins](http://upload-images.jianshu.io/upload_images/1435355-9098095a3bfb8e85.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![brewed-jenkins](/assets/post/jenkins-start-with-mac.png)
 
 #### 补充另一种打包方式 fastlane
 如果你的项目使用的是 fastlane那就简单很多了. 

@@ -1,53 +1,67 @@
-# Basic
+# 基本信息
+# 博客的标题
 title: 倚书听风雨
+# 博客的子标题
 subtitle: Valar Morghulis Valar Dohaeris
 
+# 一个点击跳转的a标签链接
 #welcome_message: <a href="https://github.com/manajay/" target="_blank">拥抱开源,在 Github</a>
 
-#disqus_url
+#博客的域名地址
 url: "https://www.manajay.com"
-
+# 博客的描述文字
 description: 静下心来,用心观察 处处都透着生活的美.
-
+# 博客文章地址规则, 设置后,你的博客文章名称就是域名+ '/年/月/' + 文章标题
 permalink: /:year/:month/:title/
 
-# Format
+# 文章的格式化工具
+# 语法高亮的插件
 highlighter: rouge
+# markdown的渲染插件
 markdown: kramdown
+
+# 没有这个配置 代码块不会生效, Github Flavored Markdown Github扩展的Markdown语法
 kramdown:
     input: GFM
 
-# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
+# 博文的整体色调 colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
 cover_color: gray
 
-# The blog button should not be removed.
+# 首个博客的按钮 标题
 blog_button:
     title: 博客
     description: 最近更新
 
-# Navigation buttons in the front page.s
+# 导航栏的按钮名称以及它对应的 url 地址
 nav:
     - {title: 所有文章, description: archive, url: '/archive'}   
     - {title: 标签, description: tags, url: '/tags'}      
     - {title: 关于我, description: about, url: '/about'}  
 
 
-# Pagination
+# 分页插件
 plugins: [jekyll-paginate]
+# 每页几篇文章
 paginate: 10
+# 分页的url路径,设置后为, 域名 + 'page/' + 页码
 paginate_path: "page/:num/"
 
-# Comment
+# 评论的插件
 comment:
+    # 使用disqus服务,需要注册一个disqus服务,并设置关联的域名
     disqus: manajay
     #provider : duoshuo
     #duoshuo :
     #short_name : manajay
     
-# Social
+# 社交的账号
 social:
+    # 微博
     weibo: Manajay_dlj
+    # github
     github: manajay
+    #推特
     twitter: manajay_dlj
+    #邮件
     mail: manajay.dlj@gmail.com
 

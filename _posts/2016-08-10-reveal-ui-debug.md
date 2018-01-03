@@ -69,7 +69,7 @@ command alias reveal_start expr (void)[(NSNotificationCenter*)[NSNotificationCen
 command alias reveal_stop expr (void)[(NSNotificationCenter*)[NSNotificationCenter defaultCenter]            postNotificationName:@"IBARevealRequestStop" object:nil];
 ```
 模拟器中添加断点:
-![](http://blog.devzeng.com/images/reveal_integrating/reveal_load_sim.png)
+![reveal_load_sim](/assets/post/reveal_load_sim.png)
 
 而且此方法在切换真机与模拟器时,不需要更换断点的指令
 
@@ -131,7 +131,7 @@ command alias reveal_stop expr (void)[(NSNotificationCenter*)[NSNotificationCent
 真机测试时,证书签名的问题`ambiguous`说明你指定了多个开发者帐号
 解决办法: 
 
-![build Setting.png](http://upload-images.jianshu.io/upload_images/1435355-3a4647916bae1451.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![build-setting.png](/assets/post/build-setting.png)
 
 ###  swift 项目
 报错: `swift` 没有`(void*)` 类型,所以要自己删除`(void*)`,其他指令不便
@@ -152,7 +152,9 @@ command alias reveal_stop expr (void)[(NSNotificationCenter*)[NSNotificationCent
 
 ## 参考链接
 
-[周静的 - iOS开发中集成Reveal](http://blog.devzeng.com/blog/ios-reveal-integrating.html)
-[界面调试神器Reveal的三种集成方式](http://www.sxt.cn/info-8708-u-13398.html)
-[cStringUsingEncoding 问题的答案链接 ](http://support.revealapp.com/discussions/questions/52969-integrating-reveal-no-longer-working)
+* [周静的 - iOS开发中集成Reveal](http://blog.devzeng.com/blog/ios-reveal-integrating.html)
+
+* [界面调试神器Reveal的三种集成方式](http://www.sxt.cn/info-8708-u-13398.html)
+
+* [cStringUsingEncoding 问题的答案链接 ](http://support.revealapp.com/discussions/questions/52969-integrating-reveal-no-longer-working)
 

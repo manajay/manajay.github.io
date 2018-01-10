@@ -5,7 +5,7 @@ tag: MongoDB
 date: 2018-01-10 14:22:50 +09:00
 ---
 
-![nosql vs sql](./assets/post/nosql-sql.jpeg)
+![nosql vs sql](/assets/post/nosql-sql.jpeg)
 
 ### MongoDB 简介
 
@@ -129,4 +129,6 @@ mongod --config /usr/local/etc/mongod.conf
 * [MongoDB RUNOOB.COM](http://www.runoob.com/mongodb/mongodb-tutorial.html)
 * [MongoDB、Cassandra 和 HBase 三种 NoSQL 数据库比较](http://blog.jobbole.com/91923/)
 * [The SQL vs NoSQL Difference: MySQL vs MongoDB](https://medium.com/xplenty-blog/the-sql-vs-nosql-difference-mysql-vs-mongodb-32c9980e67b2)
+* [几款主流 NoSql 数据库的对比](https://www.cnblogs.com/vajoy/p/5471308.html)
+
 

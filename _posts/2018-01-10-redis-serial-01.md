@@ -16,7 +16,7 @@ Redis是一个使用ANSI C编写的开源、支持网络、基于内存、可选
 * 网络同步, 支持主从同步, 消息的发布/订阅
 * 性能非常高, 基于内存的读写. `读的速度是110000次/s,写的速度是81000次/s`
 
-#### redis 相关技术的比较
+## redis 相关技术的比较
 
 * 数据类型更丰富: `Redis`的值,不仅限于字符串, 还可以包含更复杂的 **抽象数据类型**，
 `字符串列表`
@@ -31,9 +31,9 @@ Redis是一个使用ANSI C编写的开源、支持网络、基于内存、可选
 * 数据备份: 支持`master-slave`模式的数据备份。
 * 丰富的功能:  消息队列`publish/subscribe`, 通知, `key`过期等等特性
 
-#### redis的安装
+## redis的安装
 
-##### 1. Ubuntu 系统
+### 1. Ubuntu 系统
  
 * `Ubuntu`使用`apt-get`安装 `redis`
 
@@ -56,7 +56,7 @@ redis-cli
 
 * `redis.conf` 配置文件
 
-##### 2. Linux 系统
+### 2. Linux 系统
 
 * 比如 `CentOS` 使用 `wget` 安装
 
@@ -79,7 +79,7 @@ cd src
 
 * 客户端程序`redis-cli`, 可以进行测试
 
-##### 3. Mac OS 系统
+### 3. Mac OS 系统
 * `Mac` 使用 `homebrew` 安装 `redis`
 
 ```
@@ -105,7 +105,7 @@ redis-server /usr/local/etc/redis.conf
 
 * `redis.conf` 配置文件
 
-#### 应用场景
+## 应用场景
 
 * 高速缓存
 * 消息队列 , 功能简单

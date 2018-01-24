@@ -243,7 +243,7 @@ gem安装ruby的应用,默认的版本都是最新的. 那些没有安装的依�
 
 ## 参考文章
 
-* [翻墙](https://manajay.github.io/2016/06/vpn-google/)
+* [翻墙](https://manajay.com/2016/06/vpn-google/)
 
 * [jekyll官方安装教程](http://jekyllcn.com/docs/installation/)
 

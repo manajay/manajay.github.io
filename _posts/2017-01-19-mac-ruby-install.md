@@ -6,7 +6,7 @@ date: 2017-01-19 11:09:25 +09:00
 ---
 
 * 推荐大家在做这些事情的时候最好配置VPN,被墙的感觉简直糟透了
-参考我的文章[实现网络自由, 随意Google,看 YouTube 视频](https://manajay.github.io/2016/06/vpn-google/)
+参考我的文章[实现网络自由, 随意Google,看 YouTube 视频](https://manajay.com/2016/06/vpn-google/)
 
 * Ruby安装方式有两种,一个是 **rvm多环境安装**, 一种是**homebrew安装**
 
@@ -81,14 +81,14 @@ rvm use 2.4.0  --default
 
 #### 2.1 安装Homebrew
 
-[参考我的Homebrew文章](https://manajay.github.io/2017/01/homebrew-clean-install/)
+[参考我的Homebrew文章](https://manajay.com/2017/01/homebrew-clean-install/)
 
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 #### 2.2 安装`Ruby`
-
+https://manajay.com
 ```
 // 1.先更新homebrew
 brew update 

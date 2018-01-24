@@ -1,7 +1,7 @@
 ---
 layout: post
 title: iOS自动化打包分发
-tag: [iOS, 自动化]
+tag: [iOS, 自动化]https://manajay
 date: 2017-05-18 22:44:46 +09:00
 ---
 
@@ -27,7 +27,7 @@ date: 2017-05-18 22:44:46 +09:00
 
 推荐使用 `homebrew`
 #### jenkins 安装
-1、[正确安装Homebrew的方式](http://manajay.github.io/2017/01/homebrew-clean-install/)
+1、[正确安装Homebrew的方式](https://manajay.github.io/2017/01/homebrew-clean-install/)
 2、安装:  `brew install jenkins` 
 3、终端启动命令: `jenkins` 
 4、浏览器访问`jenkins`地址: ``` http://localhost:8080/ ``` , 如果不能正常访问,要么**Java**环境出问题,要么`jenkins`没有启动; Java环境的去官网下载最新的**jdk**安装;[jenkins开关命令](http://damien.co/general/how-to-start-stop-restart-or-reload-jenkins-mac-osx-8022)

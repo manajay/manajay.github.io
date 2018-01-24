@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jekyll打造自己的博客 
+title: jekyll打造自https://manajay己的博客 
 tag: [jekyll, 博客]
 date: 2016-05-12 22:57:24 +09:00
 ---
@@ -163,7 +163,7 @@ IT人必须弄个自己的博客
 ## ruby安装
 
 jekyll等一系列工具都是基于ruby的,所以首先要安装ruby环境.虽然Mac自带了`ruby`,但是因为版本过低,所以还是要使用高些的版本才可以安装并运行`jekyll`
-参考文章: [Mac上Ruby的管理](http://manajay.com/2017/01/mac-ruby-install/)
+参考文章: [Mac上Ruby的管理](https://manajay.com/2017/01/mac-ruby-install/)
 
 ## gemfile插件安装
 
@@ -243,7 +243,7 @@ gem安装ruby的应用,默认的版本都是最新的. 那些没有安装的依�
 
 ## 参考文章
 
-* [翻墙](http://manajay.github.io/2016/06/vpn-google/)
+* [翻墙](https://manajay.github.io/2016/06/vpn-google/)
 
 * [jekyll官方安装教程](http://jekyllcn.com/docs/installation/)
 

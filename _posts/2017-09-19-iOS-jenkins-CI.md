@@ -1,7 +1,7 @@
 ---
 layout: post
 title: iOS自动化打包分发
-tag: [iOS, 自动化]https://manajay
+tag: [iOS, 自动化] 
 date: 2017-05-18 22:44:46 +09:00
 ---
 

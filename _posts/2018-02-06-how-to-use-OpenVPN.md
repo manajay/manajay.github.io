@@ -73,6 +73,7 @@ date: 2018-02-06 16:04:20 +09:00
 
 ### 参考链接
 
-[OpenVPN维基百科](https://zh.wikipedia.org/zh-hans/OpenVPN)
-[如何通过Tunnelblick轻松设置Mac上的OpenVPN](http://mos86.com/55473.html)
+* [OpenVPN维基百科](https://zh.wikipedia.org/zh-hans/OpenVPN)
+
+* [如何通过Tunnelblick轻松设置Mac上的OpenVPN](http://mos86.com/55473.html)
 

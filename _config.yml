@@ -56,12 +56,14 @@ comment:
     
 # 社交的账号
 social:
-    # 微博
-    weibo: Manajay_dlj
     # github
     github: manajay
     #推特
-    twitter: manajay_dlj
+    #twitter: manajay_dlj
+    jianshu: manajay
+    juejin: manajay
+    # 微博
+    weibo: manajay_dlj
     #邮件
     mail: manajay.dlj@gmail.com
 

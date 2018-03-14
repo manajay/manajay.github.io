@@ -37,6 +37,7 @@ nav:
     - {title: 所有文章, description: archive, url: '/archive'}   
     - {title: 标签, description: tags, url: '/tags'}      
     - {title: 关于我, description: about, url: '/about'}  
+    - {title: 简历, description: tags, url: 'https://resume-manajay.netlify.com/zh/'}      
 
 
 # 分页插件

@@ -1,22 +1,42 @@
 <nav class="cover-navigation navigation--social">
   <ul class="navigation">
 
-  {% if site.social.weibo %}
-  <!-- Weibo -->
-  <li class="navigation__item">
-    <a href="http://weibo.com/{{site.social.weibo}}" title="@{{site.social.weibo}} 的微博" target="_blank">
-      <i class='social fa fa-weibo'></i>
-      <span class="label">Weibo</span>
-    </a>
-  </li>
-  {% endif %}
-
   {% if site.social.github %}
   <!-- Github -->
   <li class="navigation__item">
     <a href="https://github.com/{{site.social.github}}" title="@{{site.social.github}} 的 Github" target="_blank">
       <i class='social fa fa-github'></i>
       <span class="label">Github</span>
+    </a>
+  </li>
+  {% endif %}
+
+   {% if site.social.jianshu %}
+    <!-- jianshu-->
+    <li class="navigation__item">
+      <a href="https://www.jianshu.com/u/089cf0c28ed5" title="@{{site.social.jianshu}} 的简书" target="_blank">
+        <i class='social fa fa-book'></i>
+        <span class="label">jianshu</span>
+      </a>
+    </li>
+    {% endif %}
+
+    {% if site.social.juejin %}
+    <!-- juejin-->
+    <li class="navigation__item">
+      <a href="https://juejin.im/user/5a30d1b75188257db3727dcb" title="@{{site.social.juejin}} 的稀土掘金" target="_blank">
+        <i class='social fa fa-align-center'></i>
+        <span class="label">juejin</span>
+      </a>
+    </li>
+    {% endif %}
+
+  {% if site.social.weibo %}
+  <!-- Weibo -->
+  <li class="navigation__item">
+    <a href="http://weibo.com/{{site.social.weibo}}" title="@{{site.social.weibo}} 的微博" target="_blank">
+      <i class='social fa fa-weibo'></i>
+      <span class="label">Weibo</span>
     </a>
   </li>
   {% endif %}

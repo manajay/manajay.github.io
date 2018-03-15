@@ -37,6 +37,7 @@ nav:
     - {title: 所有文章, description: archive, url: '/archive'}   
     - {title: 标签, description: tags, url: '/tags'}      
     - {title: 关于我, description: about, url: '/about'}  
+    - {title: 简历, description: tags, url: 'https://resume-manajay.netlify.com/zh/'}      
 
 
 # 分页插件
@@ -56,12 +57,16 @@ comment:
     
 # 社交的账号
 social:
-    # 微博
-    weibo: Manajay_dlj
     # github
     github: manajay
     #推特
-    twitter: manajay_dlj
+    #twitter: manajay_dlj
+    #简书
+    jianshu: manajay
+    #掘金
+    juejin: manajay
+    #微博
+    weibo: manajay
     #邮件
     mail: manajay.dlj@gmail.com
 

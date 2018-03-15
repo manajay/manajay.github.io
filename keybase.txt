@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/manajay
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://manajay.com
+  * I am manajay (https://keybase.io/manajay) on keybase.
+  * I have a public key with fingerprint 2712 0E68 1885 C2A6 B484  B367 18BC 23D1 3632 2525
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01017a8b2e8fdf09eb2bb6e685c86452349b5cd8ef37dade17779f89fb17f2df94f40a",
+      "fingerprint": "27120e681885c2a6b484b36718bc23d136322525",
+      "host": "keybase.io",
+      "key_id": "18bc23d136322525",
+      "kid": "01017a8b2e8fdf09eb2bb6e685c86452349b5cd8ef37dade17779f89fb17f2df94f40a",
+      "uid": "6b77c16099f52def77910500306fe519",
+      "username": "manajay"
+    },
+    "service": {
+      "hostname": "manajay.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1521002479,
+  "expire_in": 157680000,
+  "prev": "1dbd20a260e08ab1160acae11fbcdc8cd3f3943682e6bb04e3862a38a6ed9b34",
+  "seqno": 5,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.76
+Comment: https://keybase.io/crypto
+
+yMIjAnicrZJbSBVBGMePmeYlQwzUgm4bFoTWXPZ6KqJClECwKMuQDjM7s7pezp72
+rCfNJIiMKAt6MDJKELECS3oopcBulIEGQhmkVNaDqBVF1kN0o1mph6DH5mWYb37/
+//y/j7mfFh9IiYuLblg8fUxhcYN3W2oDuy9d/NAgUYfVS8EGqYrPbLya8agXqrKZ
+FJQABFAjOkVct5gFDE4RpSpXdcXUVVlBWDaoYjKdW1hjhHGoaZph6YZFoWYhZhmy
+JQMi5UqWHS7nbsS1w56wRRpEQLhAXRgholJZlylWNahTE2EGsYoRUpAihBVO1FeI
+cJRE+WrbETVxCM3E+wf/n3PXztipVNNMqALDsBTEuCVgCBQAMFAtrkDDB6PcDZMa
+LugaEiaVpF5qzJVEMWab3J+r38jfwGrTqRHKiOt4julUi4sKz4tEg77Qq4/45D5O
+Q789QtQOMzFFoYhxN2o7YSkIBWl6tm8KFQQBQLJm5Eq8LmK7PGT7hKKpOhDLf4fH
+/JkxyhAgSAUc6IRC0RYxCYfQoiYzdZNhCxsyVnXEVUqBzLGuIoJ1onJmUCxLfld7
+w44UVERMUi4so3Z5mHi1Lpca790pmx2ISwkkJszyf1cgJTn9z5/Tzsz5kVVcl12U
+m/HyjZlQFHpfenJ6ycMHU68O/czRN8KbV47mnS9YPmCmFnwvax87/UhpShj+1jbZ
+vONkbH5PT0vo07nS27GVUwcXHMtf32x3t1zorsQlSuuerfmVbueTfQ9z0kpLPm9f
+H+zNqCNLpzu/nJ137nVDa+aJnoJPK5b1be6Kv92xq/tA/8SLkeK+91U3+tL7J66v
+GVvSmTRe6K76+nZkf9PzvLbJa5vWvfvsLXo80fClOTXx9ZH2jo34cNEWpbh3MC+r
+s7Io+/LwQNlH2v2q0HjalXSENA6uTbi89NbOiYKUoVMDmXOvNpWOLjy4a/uCZxuG
+tkViyanHi8cH28ong814FP8Ck/9Abg==
+=CZEo
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/manajay
+
+==================================================================
+

@@ -11,6 +11,31 @@ date: 2018-03-15 18:34:20 +09:00
 * `git push --tags` 推送本地tag到远程服务器
 * `git tag -d xxx` 然后 `git push origin :refs/tags/xxx` 两步操作将远程服务器的某个tag删除
 
+## 创建git空白分支
+
+> 方法一
+
+
+- `git checkout --orphan empty-branch` 创建一个分支
+- `git rm -rf .` 删除当前分支的所有文件, 因为不想有东西
+- `git commit -am "new branch for nothing"` 提交记录
+- 注意 如果没有任何文件提交的话，分支是看不到的，可以创建一个新文件后再次提交则新创建的branch就会显示出来. 
+- `git branch -a` 查看分支
+
+
+> 方法二
+
+
+```
+git symbolic-ref HEAD refs/heads/newbranch 
+rm .git/index 
+git clean -fdx 
+# <do your work> 
+git add your files 
+git commit -m 'Initial commit'
+```
+
+
 ## 其他
 
 * `git status` 查看当前的本地仓库状态 

@@ -20,23 +20,27 @@ If you are not using TextEdit, you should turn off smart quotes in your editor o
 
 ### target覆盖了pod的配置问题 
 
-示例
+问题示例
 
 ```
 !] The `xxx [Debug]` target overrides the `FRAMEWORK_SEARCH_PATHS` build setting defined in `Pods/Target Support Files/Pods-client_ios_fm_a/Pods-client_ios_fm_a.debug.xcconfig'. This can lead to problems with the CocoaPods installation
     - Use the `$(inherited)` flag, or
     - Remove the build settings from the target.
 ```
-类似的配置项有`ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES` `OTHER_CFLAGS`  与 `HEADER_SEARCH_PATHS` 
+
+> 类似的配置项有`ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES` `OTHER_CFLAGS`  与 `HEADER_SEARCH_PATHS` 
+
 解决方式 
-1) Use the `$(inherited)` flag
+
+- Use the `$(inherited)` flag
  
 步骤: `Target` -> `Build Settings` 搜索上面的配置项, 并设置 `$(inherited)`
 
 ![pod-build-setting](/assets/post/cocoapod/pod-build-setting.jpg)
 
 上图看似很奇怪的配置,却可以成功消除警告
-2) Remove the build settings from the target
+
+-  Remove the build settings from the target
 界面上我并没有找到去除配置的方式,可能有的配置项不允许删除吧
 
 

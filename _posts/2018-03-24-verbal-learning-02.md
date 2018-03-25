@@ -16,7 +16,7 @@ date: 2018-03-24 21:06:20 +09:00
 | Reception | 接见,招待处 | Conference hall 会议室 |
 | Sinopec | 中石化 |  |
 | state-owned business | 国企 | government-owned corporation 国企 |
-| Chemical Engineering & Technology  |  |  |
+| Chemical Engineering & Technology  | 化学工程与工艺 |  |
 | speciality | 专业 | major 主修 |
 
 

@@ -18,6 +18,15 @@ date: 2018-03-24 21:06:20 +09:00
 | state-owned business | 国企 | government-owned corporation 国企 |
 | Chemical Engineering & Technology  | 化学工程与工艺 |  |
 | speciality | 专业 | major 主修 |
+| intonation | 语调 |  |
+| accuracy | 精确 ||
+| pronunciation | 发音 | |
+| repetition | 重复 | |
+| superb | 一流的 | |
+| lotus | 莲花 | | 
+| informal| 非正式的 | |
+| dessert | 甜点 | |
+| enhancement | 提高 | |
 
 
 ## Sentence Structure 

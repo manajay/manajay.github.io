@@ -11,7 +11,7 @@ date: 2018-03-23 12:42:46 +09:00
 
 * [ ] 常见的`pod`安装问题系列, 例如`SDWebImage/webp pod install issue`?  
 * [ ]  `iOS`编译过程中出现的`symbol xxx not found`是如何产生的,如何解决 ?
-* [ ]  iOS转场动画示例
+* [x]  iOS转场动画示例 完成
 
 ## everyday
 

@@ -37,3 +37,8 @@ date: 2018-03-31 14:06:20 +09:00
 > 最后实战 
 ![](http://p3q1ykanf.bkt.clouddn.com/15224773508595.jpg)
 
+
+## 参考链接
+
+* [MWeb 七牛云图床配置 ](http://zh.mweb.im/mweb-1.9.3-release.html)
+

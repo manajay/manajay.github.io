@@ -11,6 +11,8 @@ date: 2016-08-10 09:33:32 +09:00
 * 界面动态修改UI 控件的参数,无需代码,无需重启程序 一切 xib 中有的参数,都可以调整,包括约束更新
 * 对于越狱机器 , 还可以在逆向工程中大展拳脚, 学习他人的 布局技巧
 
+> 推荐使用官方最新教程 
+
 ## Reveal 的安装与配置问题
 
 然而,上述好处的 所有种种, 前提是 你配置好了 相关的 软件.
@@ -148,6 +150,54 @@ command alias reveal_stop expr (void)[(NSNotificationCenter*)[NSNotificationCent
 ### 使用CocoaPods集成
 
 [界面调试神器Reveal的三种集成方式](http://www.sxt.cn/info-8708-u-13398.html)
+
+## 官方全新教程
+
+`Load the Reveal Server via an Xcode Breakpoint`
+
+### The method described below only works for apps running in the iOS or tvOS Simulator.
+
+Loading the Reveal Server framework via an Xcode Debugger Breakpoint is a great way to let you introspect any project you happen to be working on without needing to change anything in the project's files. It also means you don't need to worry about accidentally shipping a release build of your app linked with the Reveal library.
+
+1.  Open your iOS or tvOS project in Xcode, and select **View → Navigators → Show Breakpoint Navigator**.
+2.  In the bottom left of the pane, click the **+** button and select **Add Symbolic Breakpoint**.
+
+![image.png](https://upload-images.jianshu.io/upload_images/1435355-3447ee145bdbb9e0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+3.  Enter `UIApplicationMain` into the **Symbol** field.
+
+4.  Click the **Add Action** button, and ensure that **Action** is set to **Debugger Command**.
+5.  Copy and paste the following text into the field below:
+
+    For iOS targets:
+
+    ```
+     expr (Class)NSClassFromString(@"IBARevealLoader") == nil ? (void *)dlopen("/Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/RevealServer.framework/RevealServer", 0x2) : ((void*)0)
+    ```
+
+    For tvOS targets:
+
+    ```
+     expr (Class)NSClassFromString(@"IBARevealLoader") == nil ? (void *)dlopen("/Applications/Reveal.app/Contents/SharedSupport/tvOS-Libraries/RevealServer.framework/RevealServer", 0x2) : ((void*)0)
+    ```
+
+    > **Note**: If necessary, update the path to Reveal.app above to the correct location for your Mac.
+
+6.  Check **Automatically continue after evaluating actions**.
+
+![image.png](https://upload-images.jianshu.io/upload_images/1435355-4f86b17ac4f67405.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+7.  Right click the newly created breakpoint and select **Move Breakpoint To → User**.
+
+![image.png](https://upload-images.jianshu.io/upload_images/1435355-cedc4daa8b73126c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+    > You can enable and disable the breakpoint as you would any other. User breakpoints are available across all Xcode projects.
+
+8.  In Xcode, build and run your application under the iOS or tvOS Simulator.
+
+![image.png](https://upload-images.jianshu.io/upload_images/1435355-c286cfd163675270.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+    If everything worked, you should be able to switch to Reveal and see your iOS or tvOS application listed in Reveal. Select your app and verify that you can see a snapshot of the app matching what you see in the simulator.
 
 
 ## 参考链接

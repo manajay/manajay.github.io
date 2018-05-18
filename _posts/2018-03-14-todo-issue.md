@@ -19,6 +19,7 @@ date: 2018-05-18 12:42:46 +09:00
 * [ ] 开源项目阅读: [kickstarter](https://github.com/kickstarter/ios-oss), 相关链接[在 Kickstarter-iOS 源码中学到的](https://zhaoxinyu.me/2017-07-08-ios-oss-1/)
 * [ ] 极客时间 购买的课程学习
 * [ ]  [iOS 流行应用都在用的`sdk`](https://www.appsight.io/)
+* [ ] [老司机开发指南阅读 - 掘金](https://juejin.im/user/5a52075e6fb9a01c9d31b107)
 
 ## todo
 

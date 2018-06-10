@@ -5,7 +5,7 @@ tag: dubbo
 date: 2018-01-10 15:22:50 +09:00
 ---
 
-![dubbo-architecture](/assets/post/dubbo-architecture.png)
+![dubbo-architecture](http://p3q1ykanf.bkt.clouddn.com/201806/dubbo-architecture.png)
 
 `Dubbo`是一个基于`java`的分布式服务框架，致力于提供高性能和透明化的`RPC`远程服务调用方案，以及`SOA`服务治理方案. 
 和大多数`RPC`系统一样, `dubbo`也是基于服务的想法打造的,特别是可以远程调用有参数和返回值的方法. 

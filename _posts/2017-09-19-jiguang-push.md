@@ -7,7 +7,7 @@ date: 2017-05-19 00:42:46 +09:00
 
 #### 苹果的APNS
 
-![image.png](/assets/post/ios-push-flow.png)
+![ios-push-flow](http://p3q1ykanf.bkt.clouddn.com/201806/ios-push-flow.png)
 
 
 1. 用户的应用注册了`APNS` 消息推送功能
@@ -19,7 +19,7 @@ date: 2017-05-19 00:42:46 +09:00
 
 #### 极光推送的流程
 
-![极光推送](/assets/post/jpush-flow.png)
+![jpush-flow](http://p3q1ykanf.bkt.clouddn.com/201806/jpush-flow.png)
 
 这里和上面唯一不同的就是, 应用的服务器改为了 极光的服务器
 
@@ -30,13 +30,13 @@ date: 2017-05-19 00:42:46 +09:00
 
 #### 实际编程的注意点
 
-![image.png](/assets/post/push-notification-flow.png)
+![push-notification-flow](http://p3q1ykanf.bkt.clouddn.com/201806/push-notification-flow.png)
 
 1、极光后台的生成环境和发布环境证书必须有效
-![image.png](/assets/post/push-notification-cer.png)
+![push-notification-cer](http://p3q1ykanf.bkt.clouddn.com/201806/push-notification-cer.png)
 2、 应用需要先注册和激活极光服务
 
-![push-notification-service.png](/assets/post/push-notification-service.png)
+![push-notification-service](http://p3q1ykanf.bkt.clouddn.com/201806/push-notification-service.png)
 
 3. 应用获取到APNS下发的`DeviceToken`后,需要上传到极光服务器
 4. 应用的极光登录成功方法回调,说明服务器已经收到的应用的设备信息,并且返回了`registrationID`
@@ -276,6 +276,4 @@ jpush已登录,通知详情-(null)
 * [04.iOS远程推送通知 APNs远程推送,极光推送](http://www.jianshu.com/p/c623c2b5966a)
 
 * [「使用心得」使用 JPush iOS SDK 注意事项](https://community.jiguang.cn/t/jpush-ios-sdk/3443)
-
-
 

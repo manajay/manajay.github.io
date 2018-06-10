@@ -36,7 +36,7 @@ If you are not using TextEdit, you should turn off smart quotes in your editor o
  
 步骤: `Target` -> `Build Settings` 搜索上面的配置项, 并设置 `$(inherited)`
 
-![pod-build-setting](/assets/post/cocoapod/pod-build-setting.jpg)
+![pod-build-setting](http://p3q1ykanf.bkt.clouddn.com/201806/pod-build-setting.jpg)
 
 上图看似很奇怪的配置,却可以成功消除警告
 

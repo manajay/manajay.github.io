@@ -5,7 +5,7 @@ tag: MongoDB
 date: 2018-01-10 14:22:50 +09:00
 ---
 
-![nosql vs sql](/assets/post/nosql-sql.jpeg)
+![nosql-sql](http://p3q1ykanf.bkt.clouddn.com/201806/nosql-sql.jpeg)
 
 ### MongoDB 简介
 

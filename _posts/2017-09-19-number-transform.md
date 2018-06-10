@@ -25,10 +25,9 @@ date: 2017-08-12 22:43:46 +09:00
 
 ```
 
+![number-transfor-01](http://p3q1ykanf.bkt.clouddn.com/201806/number-transfor-01.png)
 
-![number-transfor-1](/assets/post/number-transfor-01.png)
-
-![number-transfor-2](/assets/post/number-transfor-02.png)
+![number-transfor-02](http://p3q1ykanf.bkt.clouddn.com/201806/number-transfor-02.png)
 
 ```
 #import "NSNumberTest.h"

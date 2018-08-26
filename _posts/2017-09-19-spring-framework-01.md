@@ -7,7 +7,8 @@ date: 2017-09-04 18:52:46 +09:00
 
 新手入门认识，有认识错误，请严厉批评
 
-![spring-framework-runtime](http://p3q1ykanf.bkt.clouddn.com/201806/spring-framework-runtime.png)
+
+![spring-framework框架](/assets/post/spring-framework-runtime.png)
 
 ### 核心概念
 
@@ -89,7 +90,7 @@ IoC核心是 顶层 组件与应用的基础，所有的其他功能都是在这
 
 三者是相互联系，依赖的
 
-![spring-dependency](http://p3q1ykanf.bkt.clouddn.com/201806/spring-dependency.png)
+![image.png](/assets/post/spring-dependency.png)
 
 ### aop
 
@@ -98,7 +99,7 @@ IoC核心是 顶层 组件与应用的基础，所有的其他功能都是在这
 * Instrumentation
 * Messaging
 
-![spring-dependency-aop](http://p3q1ykanf.bkt.clouddn.com/201806/spring-dependency-aop.png)
+![image.png](/assets/post/spring-dependency-aop.png)
 
 ### 持久层
 
@@ -108,7 +109,8 @@ IoC核心是 顶层 组件与应用的基础，所有的其他功能都是在这
 * JMS 消息队列
 * Transactions 事务管理
 
-![spring-dependency-full](http://p3q1ykanf.bkt.clouddn.com/201806/spring-dependency-full.png)
+
+![image.png](/assets/post/spring-dependency-full.png)
 
 ### Web
 
@@ -117,10 +119,10 @@ IoC核心是 顶层 组件与应用的基础，所有的其他功能都是在这
 * Portlet
 * Structs --> WebSocket
 
-![spring-dependency-web](http://p3q1ykanf.bkt.clouddn.com/201806/spring-dependency-web.png)
 
-![spring-dependency-messaging](http://p3q1ykanf.bkt.clouddn.com/201806/spring-dependency-messaging.png)
+![image.png](/assets/post/spring-dependency-web.png)
 
+![image.png](/assets/post/spring-dependency-messaging.png)
 
 
 ## 参考链接

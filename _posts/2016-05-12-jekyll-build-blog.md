@@ -27,11 +27,10 @@ IT人必须弄个自己的博客
 
 * 前往 [jekyll模板](http://jekyllthemes.org/)
 
-![jekyllthemes](http://p3q1ykanf.bkt.clouddn.com/201806/jekyllthemes.png)
+![jekyllthemes](/assets/post/jekyllthemes.png)
 
 进入详情页,下载模板源码,如图
-
-![download-jekyll-theme](http://p3q1ykanf.bkt.clouddn.com/201806/download-jekyll-theme.png)
+![](/assets/post/download-jekyll-theme.png)
 
 源码如下:
 
@@ -216,7 +215,7 @@ gem安装ruby的应用,默认的版本都是最新的. 那些没有安装的依�
 
 最简单的方式是,删除`Gemfile.lock`,再次`jekyll serve`运行,基本就可以了.
 
-![jekyll-serve](http://p3q1ykanf.bkt.clouddn.com/201806/jekyll-serve.png)
+![jekyll-serve](/assets/post/jekyll-serve.png)
 
 打开serve地址(http://127.0.0.1:4000)就可以看到博客的首页
 

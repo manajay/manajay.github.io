@@ -24,31 +24,31 @@ date: 2018-02-06 16:04:20 +09:00
 
 ### 安装
 
-![15179002976237](http://p3q1ykanf.bkt.clouddn.com/201806/15179002976237.jpg)
+![](/assets/post/OpenVPN/15179002976237.jpg)
 
-![15179003296210](http://p3q1ykanf.bkt.clouddn.com/201806/15179003296210.jpg)
+![](/assets/post/OpenVPN/15179003296210.jpg)
 
 ### 配置 mac 的 tunnelblick
 最重要的一步, 安装配置文件
-![15179003672615](http://p3q1ykanf.bkt.clouddn.com/201806/15179003672615.jpg)
+![](/assets/post/OpenVPN/15179003672615.jpg)
 
 这里只需要在本地找到配置文件, 双击它就会被 `Tunnelblick` 自动识别的.
 
-![15179004512252](http://p3q1ykanf.bkt.clouddn.com/201806/15179004512252.jpg)
+![](/assets/post/OpenVPN/15179004512252.jpg)
 
-![15179005555140](http://p3q1ykanf.bkt.clouddn.com/201806/15179005555140.jpg)
+![](/assets/post/OpenVPN/15179005555140.jpg)
 
 双击配置文件
 
-![15179005748425](http://p3q1ykanf.bkt.clouddn.com/201806/15179005748425.jpg)
+![](/assets/post/OpenVPN/15179005748425.jpg)
 
 连接
 
-![15179006094420](http://p3q1ykanf.bkt.clouddn.com/201806/15179006094420.jpg)
+![](/assets/post/OpenVPN/15179006094420.jpg)
 
 叮叮叮 连接成功
 
-![15179006726359](http://p3q1ykanf.bkt.clouddn.com/201806/15179006726359.jpg)
+![](/assets/post/OpenVPN/15179006726359.jpg)
 
 
 ### 配置 windows的openvpn

@@ -225,7 +225,7 @@ redis-cli
 
 * 直接编辑 `redis.conf`文件 
 
-![redis-config](http://p3q1ykanf.bkt.clouddn.com/201806/redis-config.png)
+![redis-conf](/assets/post/redis-config.png)
 
 
 * 通过 `CONFIG set`命令更新

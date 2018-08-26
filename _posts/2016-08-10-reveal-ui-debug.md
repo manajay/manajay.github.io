@@ -71,7 +71,7 @@ command alias reveal_start expr (void)[(NSNotificationCenter*)[NSNotificationCen
 command alias reveal_stop expr (void)[(NSNotificationCenter*)[NSNotificationCenter defaultCenter]            postNotificationName:@"IBARevealRequestStop" object:nil];
 ```
 模拟器中添加断点:
-![reveal_load_sim](http://p3q1ykanf.bkt.clouddn.com/201806/reveal_load_sim.png)
+![reveal_load_sim](/assets/post/reveal_load_sim.png)
 
 而且此方法在切换真机与模拟器时,不需要更换断点的指令
 
@@ -133,7 +133,7 @@ command alias reveal_stop expr (void)[(NSNotificationCenter*)[NSNotificationCent
 真机测试时,证书签名的问题`ambiguous`说明你指定了多个开发者帐号
 解决办法: 
 
-![build-setting](http://p3q1ykanf.bkt.clouddn.com/201806/build-setting.png)
+![build-setting.png](/assets/post/build-setting.png)
 
 ###  swift 项目
 报错: `swift` 没有`(void*)` 类型,所以要自己删除`(void*)`,其他指令不便

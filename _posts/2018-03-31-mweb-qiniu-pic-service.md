@@ -7,17 +7,17 @@ date: 2018-03-31 14:06:20 +09:00
 
 `Preference`偏好 -> `Publishing`发布服务
 
-![](http://p3q1ykanf.bkt.clouddn.com/15224754882035.jpg)
+![](/assets/post/mweb/api.jpg)
 
 
 * `Name` 名称可以随便填写, 主要是为了标志此云存储空间的名称 ,`Bucket Name` 同理
 * `API URL` 此处地址的填写指南可以点击[[?]](https://developer.qiniu.com/kodo/manual/1671/region-endpoint)号按钮,跳转到七牛云的存储区域域名列表
 
-![](http://p3q1ykanf.bkt.clouddn.com/15224758046099.jpg)
+![](/assets/post/mweb/storage-area.jpg)
 
 根据下面我的七牛云空间信息
 
-![](http://p3q1ykanf.bkt.clouddn.com/15224759011915.jpg)
+![](/assets/post/mweb/config.jpg)
 
 所以我选择的是华东区域的服务器域名
 
@@ -25,7 +25,7 @@ date: 2018-03-31 14:06:20 +09:00
 
 `个人中心` -> `密钥管理` 面板查找
 
-![](http://p3q1ykanf.bkt.clouddn.com/15224760971159.jpg)
+![](/assets/post/mweb/token.jpg)
 
 * `Image URL Prefix`图片前缀 也就是上面的七牛空间详情图的 **测试域名** 地址 
 * *注意这里的域名必须以 http://开头*  否则生成的图片地址会有多余的前缀
@@ -33,10 +33,10 @@ date: 2018-03-31 14:06:20 +09:00
 
 测试一下吧
 
-![](http://p3q1ykanf.bkt.clouddn.com/15224770632815.jpg)
+![](/assets/post/mweb/all-config.jpg)
 
 > 最后实战 
-![](http://p3q1ykanf.bkt.clouddn.com/15224773508595.jpg)
+![](/assets/post/mweb/test.jpg)
 
 
 ## 参考链接

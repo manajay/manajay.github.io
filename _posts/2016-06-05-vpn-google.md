@@ -7,8 +7,8 @@ date: 2016-06-05 11:37:34 +09:00
 
 
 ## 方案一: 蓝灯 Lantern 软件 
-* [Lantern官方网址](https://getlantern.org/zh_CN/)
-* [Lantern Github](https://github.com/getlantern/lantern)  哈哈 想做贡献的地方
+* [Lantern官方网址  https://getlantern.org/](https://getlantern.org/)
+* [Lantern Github https://github.com/getlantern/lantern](https://github.com/getlantern/lantern)  哈哈 想做贡献的地方
 
 ## 方案二: 不用软件,hosts项目
 
@@ -25,25 +25,19 @@ chrome://net-internals/#hsts
 
 ## 方案三:  无限流畅 肆意畅游版 :搬瓦工VPS搭建高速VPN服务器
 
-* 搭建自己的服务器, [搬瓦工](https://bandwagonhost.com/index.php) 购买`VPS`
-* 注册搬瓦工的时候, 也需要临时的翻墙,否则注册时的图片验证码不会出现, 这里可以先安装`Lantern`
+搭建自己的服务器,使用 `Shadowsocks` 
 
-* [`ShadowsocksX-NG` 客户端下载](https://github.com/shadowsocks/ShadowsocksX-NG/releases)
-* 配置 `SSR` 的信息配置
+* [搬瓦工VPS搭建高速VPN服务器 链接 http://www.jianshu.com/p/57f45490620c](http://www.jianshu.com/p/57f45490620c)
 
 ## 其他有用链接
 
-* [目前热门科学上网方式介绍及优缺点简评](https://cokebar.info/archives/236)
-
-* [Vpn与ss/ssr的区别](https://deeponion.org/community/threads/vpnss-ssr.901/)
-
-* 推荐 [Shadowsocks, 需要先翻墙](https://shadowsocks.org/en/index.html)，
+* 推荐 [Shadowsocks](https://shadowsocks.org/en/index.html)，
 一个用 Python 写的 socks 加密代理，技术宅的不二之选。
 [详尽教程](http://shadowsocks.blogspot.com/) 。
+* 推荐搭建所需要的VPS : DigitalOcean，
+注册请使用此链接 [https://www.digitalocean.com/?refcode=ac2fc898c812](https://www.digitalocean.com/?refcode=ac2fc898c812) 
 
-* `DigitalOcean` 搭建VPS， [注册请使用此链接](https://www.digitalocean.com/?refcode=ac2fc898c812) 
-
-* [搭建免费Shadowsocks服务器](http://www.rendoumi.com/wan-quan-mian-fei-de-shadowsocksfu-wu-qi/) 
+*  [搭建一个完全免费的Shadowsocks服务器](http://www.rendoumi.com/wan-quan-mian-fei-de-shadowsocksfu-wu-qi/) 
 广告：[购买专业、高速的Shaodowsocks服务](http://www.socket.pro/aff/2389)。
 
 * [翻墙大杀器 GFW](http://gfw.press/)

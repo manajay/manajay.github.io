@@ -8,14 +8,20 @@ date: 2017-01-19 12:23:32 +09:00
 * 正确安装位置 `/usr/local`, 不需要你`sudo` 破坏原系统文件.
 
 
-### 如果以前安装过,建议首先清理一下系统环境
+### 如果以前安装过,建议首先清理一下 旧 homebrew 的环境
+
+> 注意!!!! 一定要明白 `rm -rf` 一定要确认一下路径 再删除!!! 一定要明白下面指令的含义. 别一不小心到 错误的路径, 比如用户根路径, 执行强制删除操作, 如果不懂的话, 可以把这一步略过!!!!!
 
 ```
+# 下面指令是一般切换到  `/usr/local` 路径下
 cd `brew --prefix`
-rm -rf Cellar$ brew prune
+# 删除旧的 Cellar 文件夹
+rm -rf Cellar
+brew prune
 rm -rf Library .git .gitignore bin/brew README.md share/man/man1/brew
 rm -rf ~/Library/Caches/Homebrew
 ```
+
 
 ### 安装命令
 
